@@ -1,28 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+<meta charset="UTF-8">
+<title>❤️ Agatha & Vincent ❤️</title>
+</head>
+
+<body>
+
+<p><img src="IMG_6270.JPG" width="400" height="" alt=""/></p>
+
+<h2>❤️ We have been together for ❤️</h2>
+<p id="start"></p>
+
+<script>
+// Set the date we're counting down to
+var countUpDate = new Date("Aug 27, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var startdistance = now - countUpDate;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(startdistance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((startdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((startdistance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((startdistance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("start").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+
+  // If the count down is finished, write some text 
+  //if (startdistance < 0) {
+  //  clearInterval(x);
+  //  document.getElementById("start").innerHTML = "EXPIRED";
+  //}
+}, 1000);
+</script>
+
+<div></div>
+<hr>
+<div></div>
+
+<p></p>
+<h2>Our fifth anniversary in ❤️</h2>
+<p id="1st"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDateto1st = new Date("Aug 27, 2022 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distanceto1st = countDownDateto1st - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distanceto1st / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distanceto1st % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distanceto1st % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distanceto1st % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("1st").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+
+  // If the count down is finished, write some text 
+  if (distanceto1st < 0) {
+    clearInterval(x);
+    document.getElementById("1st").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<div></div>
+<hr>
+<div></div>
+
+<p></p>
+<h2>We will meet again in 😘</h2>
+<p id="meet"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 11, 2022 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("meet").innerHTML = days + " days " + hours + " hours "
+  + minutes + " minutes " + seconds + " seconds ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("meet").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<div></div>
+<hr>
+<div></div>
+
+<p><a href="Client.jar">踩地雷 Client</a></p>
+<p><a href="http://www.freeminesweeper.org/minecore.html">minesweeper expert online</a></p>
+
+</body>
 </html>
