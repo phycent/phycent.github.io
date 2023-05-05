@@ -1,130 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>❤️ Agatha & Vincent ❤️</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>❤️ Agatha & Vincent ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        text-align: center;
+      }
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 20px;
+      }
+      
+      /* Style the tabs */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+      
+      /* Style the tab links */
+      .tab button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of tabs on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Set the active tab */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Style the photo and text section */
+      .section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+      }
+      
+      .section img {
+        max-width: 50%;
+        margin-right: 20px;
+      }
+      
+      .section h2 {
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>❤️ Agatha & Vincent ❤️</h1>  
+    <img src="photos/photo001.JPG" width="400" height="" alt=""/>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'about')">About Us</button>
+      <button class="tablinks" onclick="openTab(event, 'photos')">Photos of Us</button>
+    </div>
+    
+    <div id="about" class="tabcontent">
 
-<body>
+    <h2>❤️ We have been together for ❤️</h2>
+    <p id="start"></p>
 
-<p><img src="IMG_6270.JPG" width="400" height="" alt=""/></p>
+    <script>
+    // Set the date we're counting down to
+    var countUpDate = new Date("Aug 27, 2017 00:00:00").getTime();
 
-<h2>❤️ We have been together for ❤️</h2>
-<p id="start"></p>
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-<script>
-// Set the date we're counting down to
-var countUpDate = new Date("Aug 27, 2017 00:00:00").getTime();
+      // Get todays date and time
+      var now = new Date().getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      // Find the distance between now an the count down date
+      var startdistance = now - countUpDate;
 
-  // Get todays date and time
-  var now = new Date().getTime();
+      // Time calculations for days, hours, minutes and seconds
+      var years = Math.floor(startdistance / (1000 * 60 * 60 * 24* 365));
+      var days = Math.floor(startdistance / (1000 * 60 * 60 * 24) - 365*years);
+      var hours = Math.floor((startdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((startdistance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((startdistance % (1000 * 60)) / 1000);
 
-  // Find the distance between now an the count down date
-  var startdistance = now - countUpDate;
+      // Display the result in the element with id="demo"
+      document.getElementById("start").innerHTML = years + " years " +days + " days " + hours + " hours "
+      + minutes + " minutes " + seconds + " seconds ";
 
-  // Time calculations for days, hours, minutes and seconds
-  var years = Math.floor(startdistance / (1000 * 60 * 60 * 24* 365));
-  var days = Math.floor(startdistance / (1000 * 60 * 60 * 24) - 365*years);
-  var hours = Math.floor((startdistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((startdistance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((startdistance % (1000 * 60)) / 1000);
+      // If the count down is finished, write some text 
+      //if (startdistance < 0) {
+      //  clearInterval(x);
+      //  document.getElementById("start").innerHTML = "EXPIRED";
+      //}
+    }, 1000);
+    </script>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("start").innerHTML = years + " years " +days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
+    <div></div>
+    <hr>
+    <div></div>
 
-  // If the count down is finished, write some text 
-  //if (startdistance < 0) {
-  //  clearInterval(x);
-  //  document.getElementById("start").innerHTML = "EXPIRED";
-  //}
-}, 1000);
-</script>
+    <p></p>
+    <h2>Our sixth anniversary in ❤️</h2>
+    <p id="1st"></p>
 
-<div></div>
-<hr>
-<div></div>
+    <script>
+    // Set the date we're counting down to
+    var countDownDateto1st = new Date("Aug 27, 2023 00:00:00").getTime();
 
-<p></p>
-<h2>Our sixth anniversary in ❤️</h2>
-<p id="1st"></p>
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-<script>
-// Set the date we're counting down to
-var countDownDateto1st = new Date("Aug 27, 2023 00:00:00").getTime();
+      // Get todays date and time
+      var now = new Date().getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      // Find the distance between now an the count down date
+      var distanceto1st = countDownDateto1st - now;
 
-  // Get todays date and time
-  var now = new Date().getTime();
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distanceto1st / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distanceto1st % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distanceto1st % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distanceto1st % (1000 * 60)) / 1000);
 
-  // Find the distance between now an the count down date
-  var distanceto1st = countDownDateto1st - now;
+      // Display the result in the element with id="demo"
+      document.getElementById("1st").innerHTML = days + " days " + hours + " hours "
+      + minutes + " minutes " + seconds + " seconds ";
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distanceto1st / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distanceto1st % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distanceto1st % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distanceto1st % (1000 * 60)) / 1000);
+      // If the count down is finished, write some text 
+      if (distanceto1st < 0) {
+        clearInterval(x);
+        document.getElementById("1st").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("1st").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
+    <div></div>
+    <hr>
+    <div></div>
 
-  // If the count down is finished, write some text 
-  if (distanceto1st < 0) {
-    clearInterval(x);
-    document.getElementById("1st").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+    <p></p>
+    <h2>We will meet again in 😘</h2>
+    <p id="meet"></p>
 
-<div></div>
-<hr>
-<div></div>
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jul 22, 2023 10:00:00").getTime();
 
-<p></p>
-<h2>We will meet again in 😘</h2>
-<p id="meet"></p>
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 9, 2022 21:10:00").getTime();
+      // Get todays date and time
+      var now = new Date().getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
 
-  // Get todays date and time
-  var now = new Date().getTime();
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+      // Display the result in the element with id="demo"
+      document.getElementById("meet").innerHTML = days + " days " + hours + " hours "
+      + minutes + " minutes " + seconds + " seconds ";
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("meet").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("meet").innerHTML = days + " days " + hours + " hours "
-  + minutes + " minutes " + seconds + " seconds ";
-
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("meet").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-<div></div>
-<hr>
-<div></div>
-
-</body>
+    </div>
+    
+    <div id="photos" class="tabcontent">
+    <style>
+      /* Style the photo book */
+      .photo-book {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .photo-book-item {
+        margin: 10px;
+        text-align: center;
+        max-width: 300px;
+      }
+      
+      .photo-book-item img {
+        max-width: 100%;
+      }
+    </style>
+    <h1>Our Photo Book</h1>
+    <div class="photo-book"></div>
+    
+    <script>
+      // Get the photo book element
+      const photoBook = document.querySelector('.photo-book');
+      
+      // Loop through the photos
+      for (let i = 1; i <= 4; i++) {
+        // Create a new photo book item
+        const photoBookItem = document.createElement('div');
+        photoBookItem.classList.add('photo-book-item');
+        
+        // Create an image element
+        const img = document.createElement('img');
+        img.src = `photos/photo${i.toString().padStart(3, '0')}.JPG`;
+        
+        // Create a caption element
+        const caption = document.createElement('p');
+        
+        // Fetch the caption text from the corresponding caption file
+        async function fetchCaption() {
+          const response = await fetch(`photos/photo${i.toString().padStart(3, '0')}.txt`);
+          const text = await response.text();
+          // caption.innerText = text;
+        }
+        fetchCaption();
+        
+        // Add the image and caption to the photo book item
+        photoBookItem.appendChild(img);
+        photoBookItem.appendChild(caption);
+        
+        // Add the photo book item to the photo book
+        photoBook.appendChild(photoBookItem);
+      }
+    </script>
+    </div>
+    
+    <script>
+      function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Open the first tab by default
+      document.getElementsByClassName("tablinks")[0].click();
+    </script>
+  </body>
 </html>
